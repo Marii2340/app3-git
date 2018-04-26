@@ -1,0 +1,316 @@
+﻿<!doctype html>
+<html>
+<head>
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine3/style.css" />
+<script type="text/javascript" src="engine3/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+<meta charset="utf-8">
+<title>Datos del alumno</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="js/tema3.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+
+<!--grupoJavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<!-- <script src="js/acciones.js"></scrpit -->
+<script src="phonegap.js"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/archivos/bicc2.jpg','imagenes/archivos/tip2.jpg')">
+
+<div data-role="page" id="Principal" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+   <h1>Dia Mundial de la Bicicleta</h1>
+  </div>
+  <div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+  <h1>Banner conmemorativo:</h1>
+  <div>
+  <p>Estas son imagenes de bicicletas: </p>
+  <br>
+  </div>
+  <div>
+   <img src="imagenes/bicicleta.jpg" width="60%" height="60%">
+      <img src="imagenes/sct.jpg" width="60%" height="60%">
+   </div>
+   </div>
+  </div>
+   <div>
+  <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+   <li class="ui-first-child ui-last-child">
+   <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2>Historia de la bicicleta</h2>
+   
+   </a>
+   </li>
+   <li class="ui-first-child ui-last-child">
+    <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2>Utilización como medio de transporte</h2>
+    
+    </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+    <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2>Tipos de bicicletas</h2>
+    
+    </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+    <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2>5 Marcas importantes de bicicletas</h2>
+    
+    </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+    <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2>Por que se celebra Día Mundial de la Bicicleta</h2>
+    
+    </a>
+    </li>
+    </ul>
+  </div>
+    <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div>
+    <img src="res/android/mdpi.png" width="46" height="46">
+    </div>
+    <div>
+    <h4>Aplicación Tres</h4>
+    <h4>Maria Ignacia Postrero Santos</h4>
+    </div>
+    </div>
+</div>
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+      <h1>Historia de la bicicleta</h1>
+    </div>
+    <div data-role="content" align="center">
+    <div>
+ <img src="imagenes/archivos/bic6.jpg"  width="60%" height="60%">
+    <p>
+    Alrededor de 1790, el francés Mede de Sivrac inventó algo llamado "celerifère". Estaba hecho de madera y tenía dos ruedas, pero sin pedales ni dirección. Pronto de puso de moda tirarse por las laderas en uno.El barón alemán Karl von Drais vio que el invento se podía mejorar. En 1817 diseñó una versión del celifère, pero con una rueda delantera que podía girarse usando unas barras. Montarse en una bicicleta "draisienne" se convirtió en un deporte popular en muchas partes de Europa.
+    </p>
+    <p>
+    Cuanto más grande fuera la rueda delantera, más rápido podía ir el velocípedo. En 1871, el inventor inglés James Starley diseñó un velocípedo con una rueda delantera enorme. Lo llamó el "ordinario", aunque hoy en día sería de todo menos ordinario por lo extraño que nos parecería. Es cierto que iba rápido, pero se tambaleaba mucho y causó muchos accidentes.El sobrino de James Starley, John Starley, resolvió el problema en 1885. Unió los pedales a una cadena que giraba la rueda de atrás, como en la bici de Macmillan. Ambas ruedas tenían el mismo tamaño, y la bici era tan segura que fue llamada la "bicicleta segura". Las bicis de hoy en día aún funcionan del mismo modo.
+    </p>
+    </div>
+    </div>
+    <div>
+    <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image10','','imagenes/archivos/bicc2.jpg',1)"><img src="imagenes/archivos/bic1.jpg"  width="50%" height="50%" id="Image10"></a> </div>
+    <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div>
+    <img src="res/android/mdpi.png" width="46" height="46">
+    </div>
+    <h4>Aplicacion Tres, MIPS</h4>
+    </div>
+</div>
+     
+     
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+    <h1>Utilización como medio de transporte</h1>
+    </div>
+    <div data-role="content" align="center">
+    <div>
+    <h2>Transporte</h2></div>
+    </div>
+    <p>
+    En países europeos como España, Dinamarca, Polonia, Holanda y Francia,  y en algunos asiáticos como China, la bicicleta es un medio de transporte  muy común entre sus habitantes.  Y es que se cree que alrededor del mundo, 800 millones de bicicletas ruedan cada día, con ventajas no sólo para las personas sino para el cuidado del medio ambiente.
+    </p>
+    <h2>Ventajas para tu salud</h2>
+    <li>El uso de una bicicleta puede mejorar tu salud física y emocional.</li>
+    <li>Reduce los niveles de colesterol en la sangre.</li>
+    <li>Ayuda a mejorar la coordinación motriz.</li>
+    <li>Es un excelente ejercicio aeróbico que combate los riesgos de sufrir sobrepeso y obesidad.</li>
+    <li>Reduce los niveles de estrés y mejora el estado de ánimo.</li>
+    <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container3" align="center">
+<div class="ws_images"><ul>
+		<li><img src="data3/images/bic7.jpg" alt="bic7" title="bic7" id="wows3_0"/></li>
+		<li><img src="data3/images/bic1.jpg" alt="bic1" title="bic1" id="wows3_1"/></li>
+		<li><img src="data3/images/bic3.jpg" alt="bic3" title="bic3" id="wows3_2"/></li>
+		<li><img src="data3/images/bic5.jpg" alt="bic5" title="bic5" id="wows3_3"/></li>
+		<li><img src="data3/images/bic6.jpg" alt="bic6" title="bic6" id="wows3_4"/></li>
+		<li><img src="data3/images/bicc2.jpg" alt="bicc2" title="bicc2" id="wows3_5"/></li>
+		<li><a href="http://wowslider.com"><img src="data3/images/bic4.jpg" alt="wowslider.com" title="bic4" id="wows3_6"/></a></li>
+		<li><img src="data3/images/tip2.jpg" alt="tip2" title="tip2" id="wows3_7"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="bic7"><span><img src="data3/tooltips/bic7.jpg" alt="bic7"/>1</span></a>
+		<a href="#" title="bic1"><span><img src="data3/tooltips/bic1.jpg" alt="bic1"/>2</span></a>
+		<a href="#" title="bic3"><span><img src="data3/tooltips/bic3.jpg" alt="bic3"/>3</span></a>
+		<a href="#" title="bic5"><span><img src="data3/tooltips/bic5.jpg" alt="bic5"/>4</span></a>
+		<a href="#" title="bic6"><span><img src="data3/tooltips/bic6.jpg" alt="bic6"/>5</span></a>
+		<a href="#" title="bicc2"><span><img src="data3/tooltips/bicc2.jpg" alt="bicc2"/>6</span></a>
+		<a href="#" title="bic4"><span><img src="data3/tooltips/bic4.jpg" alt="bic4"/>7</span></a>
+		<a href="#" title="tip2"><span><img src="data3/tooltips/tip2.jpg" alt="tip2"/>8</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">bootstrap carousel</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine3/wowslider.js"></script>
+<script type="text/javascript" src="engine3/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+    <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div>
+    <img src="res/android/mdpi.png" width="46" height="46">
+    </div>
+    <h4>Aplicacion Tres, MIPS</h4>
+    </div>
+    </div>
+    
+    
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+      <h1>Tipos de bicicletas</h1>
+    </div>
+    <div data-role="content" align="center">
+    <div>
+    <p>Los diferentes diseños de las bicicletas están basados en su funcionalidad: para que tipo de terreno, desarrollo de velocidad, menor peso o mayor fortaleza</p></div>
+    <div>
+      <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image11','','imagenes/archivos/tip2.jpg',1)"><img src="imagenes/archivos/tip.jpg" width="50%" height="50%" id="Image11"></a> </div>
+  </div>
+  <li>Bicicletas de montaña</li>
+  <p>
+  Las bicicletas de montaña (también conocidas como MTB) están diseñadas para “fuera de ruta” por lo que son bastante resistentes. 
+  </p>
+  <div>
+  <img src="imagenes/bicmo.jpg" width="60%" height="60%">
+  </div>
+  <li>Bicicletas de ruta</li>
+  <p>
+  Son bicicletas orientadas a obtener velocidad en pavimento, de construcción más ligera que otras bicicleta, están dotadas con ruedas más grandes, delgadas y provistas de llantas angostas y con dibujo liso.
+  </p>
+  <img src="imagenes/bicr.jpg" width="60%" height="60%">
+  <li>Bicicletas hibrídas</li>
+  <p>
+  Son bastante versátiles ya que combinan características de las bicis de montaña y de las de ruta.
+  </p>
+  <img src="imagenes/bich.jpg" width="60%" height="60%">
+  <li>Cruisers</li>
+  <p>
+  Este tipo de bicicletas están diseñadas para trayectos cortos y sobre pavimento preferencialmente.
+  </p>
+  <img src="imagenes/biccri.jpg" width="60%" height="60%">
+  <li>BMX</li>
+  <p>
+  Existen diferentes variables de estas bicicletas, algunas con llantas anchas para usarse en terrenos sueltos y otras con llantas un poco más delgadas y lisas para usarse en rampas o en la calle. 
+  </p>
+  <li>Bicicletas electricas</li>
+  <p>
+  son todas aquellas bicis que utilizan un motor para asistir el pedaleo.
+  </p>
+  <img src="imagenes/biel.jpg" width="60%" height="60%">
+  <a href="https://www.aboutespanol.com/principales-tipos-de-bicicleta-363716" target="_self"/> Más información... </a>
+    <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div>
+    <img src="res/android/mdpi.png" width="46" height="46">
+    </div>
+    <h4>Aplicacion Tres, MIPS</h4>
+    </div>
+    </div>
+    
+    
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+      <h1>5 Marcas importantes de bicicletas</h1>
+    </div>
+    <div data-role="content" align="center">
+    <div> 
+    </div>
+    </div>
+    <li>Canyon</li>
+    <p>
+    Se conoce que a partir de la década del 2000, la compañía pasó de ser proveedor para convertirse en un fabricante consumado de bicicletas de montaña, adoptando el nuevo nombre de Canyon Bicycles GmbH.
+    </p>
+    <div>
+    <img src="imagenes/can.jpg" width="60%" height="60%">
+    </div>
+    <li>Specialized</li>
+    <p>
+    Esta importante empresa fue fundada en los años 70’s por Mike Sinyard, y su producción sólo estaba inclinada hacia dos tipos de bicicletas bastantes básicas.
+    </p>
+    <div>
+    <img src="imagenes/esp.jpg" width="60%" height="60%">
+    </div>
+    <li>Treck</li>
+    <p>
+    Trek Bicycle Corporation es una marca estadounidense de bicicletas y demás elementos de ciclismo.
+    </p>
+    <div>
+    <img src="imagenes/tre.jpg" width="60%" height="60%">
+    </div>
+    <li>Scott</li>
+    <p>
+    Una de las marcas más vanguardistas en todos los segmentos competitivos: montaña, carretera y triatlón.
+    </p>
+    <div>
+    <img src="imagenes/sct.jpg" width="60%" height="60%">
+    </div>
+    <li>Cannondale</li>
+    <p>
+    Sus bicicletas de montaña con la tecnología Lefty (la horquilla sólo tiene un brazo y no dos) y sus bicicletas de carretera ultraligeras y ultra estudiadas por los ingenieros, la consagran sin duda alguna como una de las mejores marcas del mundo.
+    </p>
+    <div>
+    <img src="imagenes/can.jpg" width="60%" height="60%">
+    </div>
+    <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div>
+    <img src="res/android/mdpi.png" width="46" height="46">
+    </div>
+    <h4>Aplicacion Tres, MIPS</h4>
+    </div>
+    </div>
+    
+    
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+      <h1>Por que se celebra Día Mundial de la Bicicleta</h1>
+    </div>
+    <div data-role="content" align="center">
+    <div>
+    <h2>Día Mundial de la bicicleta.</h2></div>
+    <p>
+    El 19 de abril, se celebra el Día Mundial de la Bicicleta con el objetivo de promocionar este medio de transporte y llamar la atención sobre los derechos de los ciclistas.
+
+Se celebra este día, porque el 19 de abril de 1943 el doctor Albert Hofmann, padre del LSD, ingirió a propósito 250 µg de LSD. Tras ingerir la sustancia, Hofmann sintió que le costaba hablar de forma inteligible y pidió a su asistente de laboratorio, que estaba al tanto del experimento, que le acompañase en su viaje a casa en bicicleta, pues, por las restricciones del período de guerra, no había automóviles disponibles.
+    </p>
+    <p>
+    Desde entonces, todos los años, el 19 de Abril en todo el mundo la gente coge su bici para rememorar aquel “primer viaje” en bicicleta del doctor Hofmann.
+</p>
+    <img src="imagenes/archivos/bic7.jpg" width="60%" height="60%">
+    </div>
+    <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div>
+    <img src="res/android/mdpi.png" width="46" height="46">
+    </div>
+    <h4>Aplicacion Tres, MIPS</h4>
+    </div>
+    </div>
+</body>
+</html>
